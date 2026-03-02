@@ -1,10 +1,8 @@
 import streamlit as st
 
-st.set_page_config(page_title="Teste", page_icon="🚀")
+st.set_page_config(page_title="Página 1")
 
-st.title("🚀 Teste Streamlit")
+st.title("🏠 Página 1")
 
-st.write("Se o botão funcionar, o deploy deu certo 😎")
-
-if st.button("Clique aqui"):
-    st.success("Funcionou!!! 🎉")
+if st.button("Ir para Página 2"):
+    st.switch_page("pages/page2.py")
